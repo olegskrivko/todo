@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59109fc361.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <div class="page">
+        <div class="todo-app">
+
+            <!-- 1st page-->
+            <div class="todo-list">
+                <header class="todo-list-header">
+
+                    <select class="filter-categories" name="filter-categories"> 
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
+                    </select>
+
+                    <button class="item-page-btn"><i class="fa-solid fa-plus"></i></button>
+                </header>
+
+                    <div class="todo-items"></div>
+        
+            </div>
+
+            <!-- 2nd page-->
+            <form class="new-thing page-hide">
+
+                <select class="categories" name="categories">
+                    <option value="personal">Personal</option>
+                    <option value="business">Business</option>
+                    <option value="learning">Learning</option>
+                </select>
+                <span class="underline"></span>
+
+                <input class="input-title" type="text" placeholder="Title">
+                <span class="underline"></span>
+
+                <input class="input-place" type="text" placeholder="Place">
+                <span class="underline"></span>
+                
+                <input class="input-time" type="time" placeholder="Time">
+                <span class="underline"></span>
+
+                <button class="add-btn" type="submit" value="submit">Add your thing</button>
+
+            </form>
+           
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
